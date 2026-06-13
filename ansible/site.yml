@@ -1,0 +1,9 @@
+---
+- name: Bootstrap EC2 instance
+  hosts: all
+  become: true
+
+  roles:
+    - common
+    - security
+    - docker

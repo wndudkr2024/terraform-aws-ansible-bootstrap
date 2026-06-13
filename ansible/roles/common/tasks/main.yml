@@ -1,0 +1,29 @@
+---
+- name: Update all packages
+  ansible.builtin.dnf:
+    name: "*"
+    state: present
+    update_only: true
+
+- name: Install common packages
+  ansible.builtin.dnf:
+    name:
+      - wget
+      - git
+      - vim
+      - htop
+      - net-tools
+      - unzip
+    state: present
+
+- name: Set timezone to UTC
+  community.general.timezone:
+    name: UTC
+
+- name: Create deploy user
+  ansible.builtin.user:
+    name: deploy
+    shell: /bin/bash
+    create_home: true
+    groups: wheel
+    append: true
