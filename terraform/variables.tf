@@ -13,5 +13,5 @@ variable "project_name" {
 variable "ssh_allowed_cidr" {
   description = "CIDR block allowed for SSH access"
   type        = string
-  default     = "79.110.55.0/24"
+  default     = "0.0.0.0/0"
 }
