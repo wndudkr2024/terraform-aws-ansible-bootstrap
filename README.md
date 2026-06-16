@@ -165,3 +165,7 @@ This project demonstrates production patterns used in enterprise environments.
 ### Idempotent Execution (changed=0)
 
 ![Idempotent](screenshots/ansible-idempotent.png)
+
+### Terraform Output
+
+![Terraform Output](screenshots/terraform_output.png)
