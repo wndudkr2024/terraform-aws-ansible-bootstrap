@@ -153,3 +153,15 @@ ansible-lint passes at **production** profile — the highest validation level.
 ## Disclaimer
 
 This project demonstrates production patterns used in enterprise environments.
+
+---
+
+## Screenshots
+
+### Ansible Playbook Execution
+
+![Ansible Playbook Execution](screenshots/ansible-playbook-execution.png)
+
+### Idempotent Execution (changed=0)
+
+![Idempotent](screenshots/ansible-idempotent.png)
